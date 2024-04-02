@@ -1,0 +1,18 @@
+package aula09;
+
+import java.util.Scanner;
+
+public class desafio01{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+String meuNome = "Rodrigo Nunes Barbosa";
+String partes = meuNome.split(" ")[0];
+
+                 System.out.println(partes);
+
+                            scanner.close();
+
+}  
+
+}
