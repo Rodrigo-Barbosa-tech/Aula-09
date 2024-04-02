@@ -1,0 +1,91 @@
+package aula09;
+public class exemplo01 {
+public static void main(String [] args){
+
+String original = "Olá aula09";
+
+String concatenada = original + " exemplos";
+
+String maiusculo = original.toUpperCase();
+
+System.out.println("String original: " + original);
+System.out.println("String concatenada: " + concatenada);
+System.out.println("String maiusculo: " + maiusculo);
+
+
+System.out.println("String original pós alterações: " + original);
+
+}
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+package aula09;
+
+import java.util.Scanner;
+
+public class exemplo01 {
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+String aula09 = "Primeiro metodo dos exemplos";
+int tamanho = aula09.length();
+
+System.out.println("A frase possui: " + tamanho + " caracteres");
+
+                   scanner.close();
+}
+}
+
+------------------------------------------------------------------------------------------------------------------------
+package aula09;
+
+import java.util.Scanner;
+
+public class exemplo02{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+String exemplo = "Exemplo de frase";
+
+char primeiroCaractere = exemplo.charAt(0);
+char ultimoCaractere = exemplo.charAt(15);
+
+System.out.println("O Primeiro caractere da frase é: " + primeiroCaractere);
+System.out.println("O Ultimo caractere da frase é: " + ultimoCaractere);
+
+                         scanner.close();
+
+}
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+package aula09;
+import java.util.Scanner;
+public class exemplo03{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+String exemplo = "Exemplo de frase";
+int caracteresAnteriores = exemplo.indexOf("frase");
+
+System.out.println("Numero de caracteres anteriores: " + caracteresAnteriores);
+
+                            scanner.close();
+}
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+package aula09;
+import java.util.Scanner;
+public class exemplo03{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+String exemplo = "a letra seguir de a virou o: letra A";
+String substituição = exemplo.replace('A' , 'O');
+
+System.out.println(substituição);
+
+                            scanner.close();
+}
+}
