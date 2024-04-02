@@ -1,0 +1,69 @@
+package aula09;
+import java.util.Scanner;
+public class exemplo04 {
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Digite sua frase que ficara em maiusculo: ");
+String maiusculo = scanner.nextLine();
+
+System.out.println("Digite sua frase que ficara em minisculo: ");
+String minusculo = scanner.nextLine();
+
+String emMaiusculo = maiusculo.toUpperCase();
+String emMinusculo = minusculo.toLowerCase();
+
+System.out.println("Frase em maisculo: " + emMaiusculo);
+System.out.println("Frase em minusculo: " + emMinusculo);
+
+                 scanner.close();
+
+}
+}
+
+---------------------------------------------------------------------------------------------
+package aula09;
+import java.util.Scanner;
+public class exemplo05 {
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+String animais = "GATO,CACHORRO,OVELHA,VACA";
+
+String[] partes = animais.split(",");
+
+for (String parte : partes ) {
+
+    System.out.println(parte);
+}
+
+          scanner.close();
+
+}
+}
+
+----------------------------------------------------------------------------------------------
+package aula09;
+import java.util.Scanner;
+public class exemplo05 {
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Digite seu texto: ");
+String texto = scanner.nextLine();
+
+System.out.println("Digite o número referente a letra incial da qual deseja o trecho (de 1 a numero de letras final do texto): ");
+int nmr1 = scanner.nextInt();
+
+System.out.println("Digite o segundo número referente a letra final da qual deseja o trecho: ");
+int nmr2 = scanner.nextInt();
+
+String subString = texto.substring(nmr1 - 1, nmr2);
+
+System.out.println("O trecho referente ao numero das letras extraido foi:" + subString);
+
+             scanner.close();
+
+}}
+
+--------------------------------------------------------------------------------------------------
