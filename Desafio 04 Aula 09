@@ -1,0 +1,20 @@
+package aula09;
+
+import java.util.Scanner;
+
+public class desafio04{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+    
+System.out.println("Digite o nome de uma cidade: ");
+String nome = scanner.nextLine();
+
+
+boolean nomeCidade = nome.equalsIgnoreCase("Curitiba");
+
+                   System.out.println(nomeCidade);
+
+                         scanner.close();
+
+}  
+}
