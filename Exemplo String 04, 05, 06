@@ -67,3 +67,51 @@ System.out.println("O trecho referente ao numero das letras extraido foi:" + sub
 }}
 
 --------------------------------------------------------------------------------------------------
+package aula09;
+import java.util.Scanner;
+public class exemplo06{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Digite uma palavra: ");
+String primeira = scanner.nextLine();
+
+System.out.println("Digite outra palavra: ");
+String segunda = scanner.nextLine();
+
+
+System.out.println("Digite uma terceira palavra: ");
+String terceira = scanner.nextLine();
+
+boolean saoIguais1 = primeira.equals(segunda);
+System.out.println("True palavras iguais, false diferentes: " + saoIguais1);
+
+boolean saoIguais2 = primeira.equals(terceira);
+System.out.println("True palavras iguais, false diferentes: "+ saoIguais2);
+
+boolean saoIguais3 = segunda.equals(terceira);
+System.out.println("True palavras iguais, false diferentes: " + saoIguais3);
+
+                  scanner.close();
+}
+}
+
+---------------------------------------------------------------------------------------------------
+package aula09;
+import java.util.Scanner;
+public class exemplo06{
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+String exemplo = "Texto de exemplo";
+
+boolean inicio = exemplo.startsWith("Texto");
+boolean fim = exemplo.endsWith("exemplo");
+
+System.out.println(inicio);
+System.out.println(fim);
+
+                    scanner.close();
+
+
+}
+}
