@@ -2,19 +2,21 @@ package aula09;
 
 import java.util.Scanner;
 
-public class desafio04{
-public static void main(String[] args){
-Scanner scanner = new Scanner(System.in);
-    
-System.out.println("Digite o nome de uma cidade: ");
-String nome = scanner.nextLine();
+public class desafio04 {
+      public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.println("Digite o nome de uma cidade: ");
+            String nome = scanner.nextLine();
 
-boolean nomeCidade = nome.equalsIgnoreCase("Curitiba");
+            if (nome.equalsIgnoreCase("Curitiba")) {
+                  System.out.print("A cidade é Curitiba");
+          }
 
-                   System.out.println(nomeCidade);
+            else {
+                  System.out.print("A cidade não é Curitiba");
+          }
 
-                         scanner.close();
-
-}  
-}
+            scanner.close();
+          }
+          }
