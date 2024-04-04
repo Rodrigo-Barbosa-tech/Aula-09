@@ -2,19 +2,21 @@ package aula09;
 
 import java.util.Scanner;
 
-public class desafio03{
-public static void main(String[] args){
-Scanner scanner = new Scanner(System.in);
-    
-System.out.println("Digite o nome de uma cidade: ");
-String nome = scanner.nextLine();
+public class desafio03 {
+      public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.println("Digite o nome de uma cidade: ");
+            String nome = scanner.nextLine();
 
-boolean nomeCidade = nome.equals("Curitiba");
+            if (nome.equals("Curitiba")) {
+                  System.out.println("A cidade está correta");
+            }
 
-                   System.out.println(nomeCidade);
+            else {
+                  System.out.println("A cidade não é igual a Curitiba");
+            }
 
-                         scanner.close();
-
-}  
-}
+            scanner.close();
+      }
+     }
